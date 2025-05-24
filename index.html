@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matrimonio Victor y Bianca</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Victor <span class="text-primary">&</span> Bianca</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Inicio</a>
+                <a href="#story" class="nav-item nav-link">Historia</a>
+                <a href="#gallery" class="nav-item nav-link">Galeria</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Victor <span class="text-primary">&</span> Bianca</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#family" class="nav-item nav-link">Padrinos</a>
+                <a href="#event" class="nav-item nav-link">Evento</a>
+                <a href="#regalo" class="nav-item nav-link">Regalo</a>
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5 pb-5" id="home">
+  <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/invitacion2.jpg" class="d-block w-100" alt="Invitación de boda" style="object-fit: cover; height: 100%;">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <div class="p-3" style="max-width: 900px;">
+            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Victor & Bianca</h1>
+            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+              <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">¡Estás invitado a nuestro matrimonio!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    <!-- Carousel End -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuenta Regresiva - Boda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f7f7f7;
+    }
+    #contador {
+      font-size: 3rem;
+      color: #ff4d4d;
+      margin-top: 20px;
+      background-color: #fff;
+      display: inline-block;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .tiempo {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .tiempo span {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .etiqueta {
+      font-size: 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>¿Cuanto falta para el gran  dia? 💍</h1>
+
+  <div id="contador">
+    <div class="tiempo">
+      <span id="dias">00</span>
+      <div class="etiqueta">Días</div>
+    </div>
+    <div class="tiempo">
+      <span id="horas">00</span>
+      <div class="etiqueta">Horas</div>
+    </div>
+    <div class="tiempo">
+      <span id="minutos">00</span>
+      <div class="etiqueta">Minutos</div>
+    </div>
+    <div class="tiempo">
+      <span id="segundos">00</span>
+      <div class="etiqueta">Segundos</div>
+    </div>
+  </div>
+
+  <script>
+    // Fecha de la boda (10 de junio de 2025)
+    const fechaBoda = new Date("June 10, 2025 13:30:00").getTime();
+
+    // Función que actualiza el contador
+    function actualizarContador() {
+      const ahora = new Date().getTime();
+      const distancia = fechaBoda - ahora;
+
+      // Calcular días, horas, minutos y segundos
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+      // Mostrar el contador en la página
+      document.getElementById("dias").innerText = dias.toString().padStart(2, '0');
+      document.getElementById("horas").innerText = horas.toString().padStart(2, '0');
+      document.getElementById("minutos").innerText = minutos.toString().padStart(2, '0');
+      document.getElementById("segundos").innerText = segundos.toString().padStart(2, '0');
+
+      // Si el contador llega a 0, mostrar mensaje final
+      if (distancia < 0) {
+        clearInterval(contadorIntervalo);
+        document.getElementById("contador").innerHTML = "<h2>¡Hoy es el gran día! 🎉</h2>";
+      }
+    }
+
+    // Actualizar el contador cada segundo
+    const contadorIntervalo = setInterval(actualizarContador, 1000);
+
+    // Ejecutar la primera vez inmediatamente
+    actualizarContador();
+  </script>
+
+</body>
+</html>
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <!-- <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Sobre nosotros</h6>
+                <h1 class="font-secondary display-4">Novio & Novia</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">El Novio</h3>
+                        <p>El novio se llama vitolo pico chico </p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Victor</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">La Novia</h3>
+                        <p>.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Bianca</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- About End -->
+
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Historia</h6>
+                <h1 class="font-secondary display-4">Nuestra Historia</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/2016.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Primer Encuentro</h4>
+                            <p class="text-uppercase mb-2">2016</p>
+                            <p class="m-0">Nos conocimos en el 2016, cuando todavía íbamos al colegio. Desde el principio, lo nuestro fue un amor muy intenso, de esos que se sienten con todo el corazón. Éramos jóvenes, pero ya soñábamos con casarnos algún día, con construir una vida juntos.
+
+Sin embargo, como muchas historias que empiezan temprano, la vida nos llevó por caminos diferentes. No estuvimos juntos tanto tiempo en ese entonces, pero el sentimiento siempre quedó guardado en un rincón del corazón.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Reencuentro</h4>
+                            <p class="text-uppercase mb-2">2024</p>
+                            <p class="m-0">En 2024, la vida nos regaló una segunda oportunidad. Un viernes cualquiera decidimos salir al Monticello, sin imaginar que ese encuentro lo cambiaría todo. Entre risas, miradas y recuerdos, sentimos que el amor seguía ahí, intacto. Esa noche supimos que no queríamos volver a separarnos nunca más.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/renc.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/propuesta.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Propuesta Matrimonio</h4>
+                            <p class="text-uppercase mb-2">01 Feb 2025</p>
+                            <p class="m-0">Todo pasó una tarde cualquiera… o eso pensábamos. Nos juntamos con toda la familia en La Nueva China, listos para comer rico, reírnos un rato y pasarla bien. Pero Víctor tenía otro plan bajo la manga.
+
+En medio de los platos, los brindis y el murmullo familiar, de repente, se puso de pie, con esa cara de “algo va a pasar”, y le pidió a Bianca que se casara con él. ¡Y sí! Bianca dijo que sí (entre risas, nervios y algún que otro grito emocionado).
+
+Fue un almuerzo inolvidable, llena de emoción, abrazos y hasta alguna lagrimita. Y como no podía faltar en una noche así, lo cerramos con karaoke: mucho canto, poco talento… pero todo el corazón. Hay talento en la sangre solo falta que circule.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Compromiso</h4>
+                            <p class="text-uppercase mb-2">10 Jun 2025</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galeria</h6>
+            <h1 class="font-secondary display-4 text-white">Nuestra Galeria de Fotos</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100"  src="img/1_resized.jpg" alt="">
+                <a href="img/1_resized.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+              <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/10.jpg" alt="">
+                <a href="img/10.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/7.jpg" alt="">
+                <a href="img/7.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/5.jpg" alt="">
+                <a href="img/5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/6.jpg" alt="">
+                <a href="img/6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <!-- <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/3.jpg" alt="">
+                <a href="img/3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div> -->
+          
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Evento de Boda</h6>
+                <h1 class="font-secondary display-4">Evento de Boda</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <!-- <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo</h5> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 border-right border-primary">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <img class="img-fluid mb-4" src="img/lugar.jpg" style="width: 140%;" alt="">
+                        <h4 class="mb-3">La Celebración</h4>
+                        <p class="mb-2">Lampa, CHILE</p>
+<p class="mb-0" style="font-size: 20px; font-weight: bold;">13:30PM - 20:30PM</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690.7712122091978!2d-70.7607129309103!3d-33.32789886462854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662bf79230f634d%3A0xb2dc6a3420568749!2sClub%20House%20Condominio%20Laguna%20Norte!5e0!3m2!1ses!2scl!4v1748128710331!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
+
+
+    <!-- Friends & Family Start -->
+  <div class="container-fluid py-5" id="family">
+    <div class="container pt-5 pb-3">
+        <div class="section-title position-relative text-center">
+            <h1 class="font-secondary display-4">Padrino & Madrina</h1>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+        
+        <!-- Filtros -->
+        <!-- <div class="row justify-content-center mb-4">
+            <div class="col-12 text-center">
+                <ul class="list-inline" id="portfolio-flters">
+                    <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Padrino</li>
+                    <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Madrina</li>
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- Tarjetas de padrino y madrina -->
+        <div class="row portfolio-container justify-content-center custom-position" >
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative mb-2 d-flex flex-column justify-content-center align-items-center text-center h-100">
+                    <img  class="img-fluid w-100 mb-3" src="img/chalo.jpg" style="max-width: 94% !important;" alt="">
+                    <div class="bg-secondary text-center p-4 w-100">
+                        <h4 class="mb-3">Gonzalo Salazar</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative mb-2 d-flex flex-column justify-content-center align-items-center text-center h-100">
+                    <img class="img-fluid w-100 mb-3" src="img/katy.jpg" alt="">
+                    <div class="bg-secondary text-center p-4 w-100">
+                        <h4 class="mb-3">Katherine Luna</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Friends & Family End -->
+
+<!-- Asegúrate de tener Font Awesome en tu HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="card" id="regalo" style="font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f6f1;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;">
+  
+  <h1>
+    <i class="fa-solid fa-gift" style="color: #e91e63; margin-right: 10px;"></i>
+    Regalo de Boda
+  </h1>
+
+  <p>Tu presencia es nuestro mayor regalo, pero si quieres hacernos un obsequio...</p>
+  
+  <div class="account-data" style="margin-top: 20px;">
+    <p><strong>Banco:</strong> Banco Itau</p>
+    <p><strong>Tipo de cuenta:</strong> Corriente</p>
+    <p><strong>Nro Cuenta:</strong> 000226356998</p>
+    <p><strong>Rut:</strong> 20.100.031-9</p>
+    <p><strong>Correo:</strong> desarrollo.victorreyes@gmail.com</p>
+    <p><strong>Monto:</strong> Lo que sea su cariño, todo es bien recibido.</p>
+  </div>
+
+  <p class="note" style="margin-top: 20px;">¡Gracias por acompañarnos en este momento tan especial!</p>
+</div>
+
+
+    <!-- RSVP Start -->
+    <!-- <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Confirma tu asistencia</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Nombre"/>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Email"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>Numero de asistentes</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>Asistire</option>
+                                        <option>Todos los eventos</option>
+                                        <option>Fiesta de Bodas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Mensaje" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- RSVP End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Muchas Gracias!</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <!-- <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div> -->
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white" href="#">Victor Reyes &</p>
+                <br>
+                <p class="text-white" href="#">&nbsp Bianca Mora</p>
+
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">+569 76600356</p>
+                <br>
+                <p class="text-white" href="#">&nbsp +569 42277629</p>
+
+ 
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#"></a>Designed by <a class="text-primary" >Victor Reyes Pinto</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
